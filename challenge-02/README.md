@@ -24,7 +24,7 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
 Onde VALOR é o novo valor da variável.
 */
 function atribuiValor() {
-  var novaVar = 200;
+  novaVar = 200;
   return 'O valor da variavel agora é ' + novaVar;
 }
 
@@ -46,7 +46,7 @@ Crie uma função com as seguintes características:
 function preencherValor(valor1, valor2, valor3) {
   if(valor1 === undefined || valor2 === undefined || valor3 === undefined ) {
     return 'Preencha todos os valores corretamente!';
-  }
+  }//poderia ter usado else aqui, mas se o valor de cima for atendido, ele ignoraria da mesma forma o else ou o próximo return.
   return (valor1 * valor2 * valor3) + 2;
 }
 
@@ -54,6 +54,7 @@ function preencherValor(valor1, valor2, valor3) {
 preencherValor(5, 2)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
+
 // 'Preencha todos os valores corretamente!'//
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
